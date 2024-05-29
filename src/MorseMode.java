@@ -17,17 +17,18 @@ public class MorseMode extends JFrame {
 
         // Create the main panel with a white background
         JPanel mainPanel = new JPanel();
-        mainPanel.setBackground(Color.WHITE);
+        mainPanel.setBackground(UIManager.getBackgroundColor());
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 
         // Create and add the header label
         JLabel headerLabel = new JLabel("Welcome to MorseMode! Please click a button below to explore the functionality of this program!");
         headerLabel.setFont(new Font("SansSerif", Font.BOLD, 24));
+
         headerLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         mainPanel.add(headerLabel);
 
         // Create buttons for each feature
-        String[] buttons = {"Translator", "Lessons", "Listening Challenge", "Typing Speed", "Settings", "AI Tool", "Hangman"};
+        String[] buttons = {"Translator", "Lessons", "Morse Challenge", "Listening Challenge", "Typing Speed", "Settings", "AI Tool", "Hangman"};
         for (String buttonName : buttons) {
             JButton button = new JButton(buttonName);
             button.setFont(new Font("SansSerif", Font.PLAIN, 18));
@@ -36,8 +37,13 @@ public class MorseMode extends JFrame {
             mainPanel.add(button);
         }
 
+
+        setContentPane(mainPanel);
+        updateUIColors();
+        updateUIFont();
+        setBackgroundImage();
         // Add the main panel to the frame
-        add(mainPanel, BorderLayout.CENTER);
+
         pack();
         setTitle("MorseMode");
         setSize(800, 600);
@@ -54,7 +60,7 @@ public class MorseMode extends JFrame {
                     new Translator();
                     break;
                 case "Lessons":
-                    new LessonsPage();
+                    new Lessons();
                     break;
                 case "Listening Challenge":
                     new ListeningChallenge();
@@ -65,9 +71,12 @@ public class MorseMode extends JFrame {
                 case "Settings":
                     new Settings();
                     break;
+                case "Morse Challenge":
+                    new MorseChallenge();
+                    break;
                 case "AI Tool":
                     try {
-                        Desktop.getDesktop().browse(new java.net.URI("http://placeholder-link.com"));
+                        Desktop.getDesktop().browse(new java.net.URI("https://poe.com/MorseMode"));
                     } catch (Exception ex) {
                         ex.printStackTrace();
                     }
@@ -79,10 +88,44 @@ public class MorseMode extends JFrame {
         }
     }
 
+    private void updateUIColors() {
+        getContentPane().setBackground(UIManager.getBackgroundColor());
+        for (Component component : getContentPane().getComponents()) {
+            if (component instanceof JLabel || component instanceof JButton) {
+                component.setForeground(UIManager.getTextColor());
+            }
+        }
+    }
+
+    private void updateUIFont() {
+        Font newFont = new Font("SansSerif", Font.PLAIN, UIManager.getTextSize());
+        for (Component component : getContentPane().getComponents()) {
+            component.setFont(newFont);
+        }
+        revalidate();
+        repaint();
+    }
+
+    private void setBackgroundImage() {
+        if (UIManager.getBackgroundImage() != null) {
+            JLabel backgroundLabel = new JLabel(UIManager.getBackgroundImage());
+            backgroundLabel.setLayout(new FlowLayout());
+            setContentPane(backgroundLabel);
+
+        } else {
+            getContentPane().setBackground(UIManager.getBackgroundColor());
+        }
+        revalidate();
+        repaint();
+    }
+
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             MorseMode ex = new MorseMode();
             ex.setVisible(true);
         });
+    }
+
+    public static class dummy {
     }
 }

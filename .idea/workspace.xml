@@ -1,28 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7891a70-1d20-4de3-87f2-ef3f86706560" name="Changes" comment="" />
+    <list default="true" id="a7891a70-1d20-4de3-87f2-ef3f86706560" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MorseMoGUIReal2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hangman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lessons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ListeningChallenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MorseChallenge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MorseMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/To-DO List" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Translator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TypingSpeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UIManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2gkwZVAGNYyeby2CrhbHmuX1XxW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "onboarding.tips.debug.path": "/Users/moses/IdeaProjects/MorseMoGUIReal2/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/moses/IdeaProjects/MorseMoGUIReal2/src/Main.java&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Hangman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hangman" />
+      <module name="MorseMoGUIReal2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Hangman" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,8 +83,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>13</line>
+          <url>file://$PROJECT_DIR$/src/MorseMode.java</url>
+          <line>31</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

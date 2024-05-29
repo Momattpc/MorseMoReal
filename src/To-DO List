@@ -1,0 +1,12 @@
+EXACTLY WHAT DOESN'T WORK
+2. Functionality of each one:
+TOP PRIORITY:
+
+
+To fix settings: (throw)
+- replace all instances of setting text size for labels, color of text, and background color to get from the UI manager class
+
+
+PRIORITY: Adding specifics for lessons, morse code challenge, hangman,listening challenge filepaths,
+hen: settings (not universal), listening challenge (doesn't support MP3 files),
+
